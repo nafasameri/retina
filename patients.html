@@ -89,9 +89,9 @@
               <i class="fe fe-home fe-16"></i>
               <span class="ml-3 item-text">تعاریف اولیه</span><span class="sr-only">(current)</span>
             </a>
-            <ul class="collapse list-unstyled pl-4 w-100 show" id="dashboard">
-              <li class="nav-item active">
-                <a class="nav-link pl-3 active" href="./types_treatment.html"><span class="ml-1 item-text">انواع
+            <ul class="collapse list-unstyled pl-4 w-100" id="dashboard">
+              <li class="nav-item">
+                <a class="nav-link pl-3" href="./types_treatment.html"><span class="ml-1 item-text">انواع
                     درمان</span></a>
               </li>
             </ul>
@@ -125,9 +125,9 @@
         </p>
         <ul class="navbar-nav flex-fill w-100 mb-2">
           <li class="nav-item dropdown">
-            <a href="./patients.html" class="nav-link">
+            <a href="./patients.html" class="nav-link active">
               <i class="fe fe-file fe-16"></i>
-              <span class="ml-3 item-text">لیست بیماران</span>
+              <span class="ml-3 item-text active">لیست بیماران</span>
             </a>
             <!-- <ul class="collapse list-unstyled pl-4 w-100 w-100" id="pages">
               <li class="nav-item">
@@ -157,155 +157,259 @@
           <div class="col-12">
             <div class="row">
               <div class="col-md-12 my-4">
-                <h2 class="h4 mb-1">اوناع درمان</h2>
-                <p class="mb-3">Child rows with additional detailed information</p>
+                <h2 class="h4 mb-1">لیست بیماران</h2>
+                <p class="mb-3"></p>
                 <div class="card shadow">
                   <div class="card-body">
+                    <div class="toolbar">
+                      <form class="form">
+                        <div class="form-row">
+                          <div class="form-group col-auto mr-auto">
+                            <label class="my-1 mr-2 sr-only" for="inlineFormCustomSelectPref1">Show</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelectPref1">
+                              <option value="">...</option>
+                              <option value="1">12</option>
+                              <option value="2" selected>32</option>
+                              <option value="3">64</option>
+                              <option value="3">128</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-auto">
+                            <label for="search" class="sr-only">جستجو</label>
+                            <input type="text" class="form-control" id="search1" value="" placeholder="جستجو">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                     <!-- table -->
-                    <table class="table table-hover table-borderless border-v">
-                      <thead class="thead-dark">
+                    <table class="table table-borderless table-hover">
+                      <thead>
                         <tr>
-                          <th>شناسه نوع درمان</th>
-                          <th>نام درمان</th>
-                          <th>توضیحات درمان</th>
-                          <th>وضعیت</th>
+                          <th>شناسه بیمار</th>
+                          <th>آواتار بیمار</th>
+                          <th>نام و نام خانوادگی</th>
+                          <th>شماره ملی</th>
+                          <th>تاریخ تولد</th>
+                          <th>شماره بیمه</th>
+                          <th>تلفن</th>
                           <th>عملیات</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="accordion-toggle collapsed" id="c-2474" data-toggle="collapse" data-parent="#c-2474"
-                          href="#collap-2474">
-                          <td>3599</td>
-                          <td>کنترل قند خون</td>
-                          <td>کنترل قند خون بهتر از همه، به تاخیر افتادن و یا کاهش شدت رتینوپاتی دیابتی کمک می کند. برای
-                            کنترل قند خون، ممکن است نیاز به تغییر در رژیم غذایی، ورزش، داروها و یا همه آنها باشد.</td>
-                          <td><span class="badge badge-pill badge-success mr-2">فعال</span><small
-                              class="text-muted"></small></td>
+                        <tr>
+                          <td>3446</td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>محمد اکبری</strong></p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">0689264753</p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">۱۳۶۰/۰۴/۱۱</a></p>
+                          </td>
+                          <td class="w-25"><small class="text-muted">۲۴۷۸۹۶۲۰۰۱</small></td>
+                          <td class="text-muted">۰۹۱۲۳۴۵۶۷۸۹</td>
                           <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="text-muted sr-only">Action</span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right">
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Remove</a>
-                              <a class="dropdown-item" href="#">Assign</a>
+                              <a class="dropdown-item" href="#">ویرایش</a>
+                              <a class="dropdown-item" href="#">حذف</a>
+                              <a class="dropdown-item" href="#">جزئیات پرونده</a>
                             </div>
                           </td>
                         </tr>
-                        <tr id="collap-2474" class="collapse in p-3 bg-light">
-                          <td colspan="8">
-                            <dl class="row mb-0 mt-1">
-                              <dt class="col-sm-1">Company</dt>
-                              <dd class="col-sm-2">Fringilla Ornare Consulting</dd>
-                              <dt class="col-sm-1">Address</dt>
-                              <dd class="col-sm-2">287-8300 Nisl. St.</dd>
-                              <dt class="col-sm-1">Phone</dt>
-                              <dd class="col-sm-2">(899) 881-3833</dd>
-                              <dt class="col-sm-1 text-truncate">Region</dt>
-                              <dd class="col-sm-2">Papua New Guinea</dd>
-                            </dl>
+                        <tr>
+                          <td>2786
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-1.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
                           </td>
-                        </tr>
-                        <tr class="accordion-toggle collapsed" id="c-3954" data-toggle="collapse" data-parent="#c-3954"
-                          href="#collap-3954">
-                          <td>3954</td>
-                          <td>داروهای ضد التهابی</td>
-                          <td>برخی داروهای ضد التهابی مانند استروئیدها می توانند التهاب و بیماری را بهبود بخشند.</td>
-                          <td><span class="badge badge-pill badge-success mr-2">فعال</span><small
-                              class="text-muted"></small></td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>زهرا کاظمی</strong></p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">5876948237</p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">۱۳۶۵/۰۹/۲۲</a></p>
+                          </td>
+                          <td class="w-25"><small class="text-muted">۴۶۷۱۱۱۷۹۰۲</small></td>
+                          <td class="text-muted">۰۹۱۲۴۳۵۶۷۸۹</td>
                           <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="text-muted sr-only">Action</span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right">
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Remove</a>
-                              <a class="dropdown-item" href="#">Assign</a>
+                              <a class="dropdown-item" href="#">ویرایش</a>
+                              <a class="dropdown-item" href="#">حذف</a>
+                              <a class="dropdown-item" href="#">جزئیات پرونده</a>
                             </div>
                           </td>
                         </tr>
-                        <tr id="collap-3954" class="collapse in p-3 bg-light">
-                          <td colspan="8">
-                            <dl class="row mb-0 mt-1">
-                              <dt class="col-sm-1">Company</dt>
-                              <dd class="col-sm-2">Tristique Ltd</dd>
-                              <dt class="col-sm-1">Address</dt>
-                              <dd class="col-sm-2">4577 Cras St.</dd>
-                              <dt class="col-sm-1">Phone</dt>
-                              <dd class="col-sm-2">(977) 220-6518</dd>
-                              <dt class="col-sm-1 text-truncate">Region</dt>
-                              <dd class="col-sm-2">Central African Republic</dd>
-                            </dl>
+                        <tr>
+                          <td>2747</td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
                           </td>
-                        <tr class="accordion-toggle collapsed" id="c-2429" data-toggle="collapse" data-parent="#c-2429"
-                          href="#collap-2429">
-                          <td>2429</td>
-                          <td>لیزر</td>
-                          <td>لیزر یک روش درمانی کارآمد برای رتینوپاتی دیابتی است که با استفاده از انرژی نوری، تعداد
-                            بیشتری از رگ های خونی بدون آسیب به بافت چشمی را حذف می کند.</td>
-                          <td><span class="badge badge-pill badge-success mr-2">فعال</span><small
-                              class="text-muted"></small></td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>علی رضایی</strong></p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">2365198746</p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">۱۳۵۹/۰۷/۱۷</a></p>
+                          </td>
+                          <td class="w-25"><small class="text-muted">۲۸۶۰۹۱۱۲۴۲</small></td>
+                          <td class="text-muted">۰۹۱۲۳۴۵۶۷۸۹</td>
                           <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="text-muted sr-only">Action</span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right">
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Remove</a>
-                              <a class="dropdown-item" href="#">Assign</a>
+                              <a class="dropdown-item" href="#">ویرایش</a>
+                              <a class="dropdown-item" href="#">حذف</a>
+                              <a class="dropdown-item" href="#">جزئیات پرونده</a>
                             </div>
                           </td>
                         </tr>
-                        <tr id="collap-2429" class="collapse in p-3 bg-light">
-                          <td colspan="8">
-                            <dl class="row mb-0 mt-1">
-                              <dt class="col-sm-1">Company</dt>
-                              <dd class="col-sm-2">Orci Luctus Et Inc.</dd>
-                              <dt class="col-sm-1">Address</dt>
-                              <dd class="col-sm-2">P.O. Box 228, 7512 Lectus Ave</dd>
-                              <dt class="col-sm-1">Phone</dt>
-                              <dd class="col-sm-2">(537) 315-1481</dd>
-                              <dt class="col-sm-1 text-truncate">Region</dt>
-                              <dd class="col-sm-2">Bonaire, Sint Eustatius and Sabac</dd>
-                            </dl>
+                        <tr>
+                          <td>2639</td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
                           </td>
-                        </tr>
-                        <tr class="accordion-toggle collapsed" id="c-3987" data-toggle="collapse" data-parent="#c-3987"
-                          href="#collap-3987">
-                          <td>3987</td>
-                          <td>جراحی</td>
-                          <td>در برخی موارد، رتینوپاتی دیابتی به گونه ای شدید می شود که نیاز به جراحی دارد. در این روش،
-                            پزشک با استفاده از لیزر یا برش با فریز برای جدا کردن شبکیه از قسمت پشتی چشمی انجام می دهد.
+                          <td>
+                            <p class="mb-0 text-muted"><strong>فاطمه صادقی</strong></p>
                           </td>
-                          <td><span class="badge badge-pill badge-success mr-2">فعال</span><small
-                              class="text-muted"></small></td>
+                          <td>
+                            <p class="mb-0 text-muted">3694817526</p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">۱۳۶۴/۰۵/۱۲</a></p>
+                          </td>
+                          <td class="w-25"><small class="text-muted">۳۴۹۸۸۱۱۰۰۳</small></td>
+                          <td class="text-muted">۰۹۱۲۳۴۵۶۷۸۹</td>
                           <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="text-muted sr-only">Action</span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right">
-                              <a class="dropdown-item" href="#">Edit</a>
-                              <a class="dropdown-item" href="#">Remove</a>
-                              <a class="dropdown-item" href="#">Assign</a>
+                              <a class="dropdown-item" href="#">ویرایش</a>
+                              <a class="dropdown-item" href="#">حذف</a>
+                              <a class="dropdown-item" href="#">جزئیات پرونده</a>
                             </div>
                           </td>
                         </tr>
-                        <tr id="collap-3987" class="collapse in p-3 bg-light">
-                          <td colspan="8">
-                            <dl class="row mb-0 mt-1">
-                              <dt class="col-sm-1">Company</dt>
-                              <dd class="col-sm-2">Ap #377-5357 Sed Road</dd>
-                              <dt class="col-sm-1">Address</dt>
-                              <dd class="col-sm-2">P.O. Box 228, 7512 Lectus Ave</dd>
-                              <dt class="col-sm-1">Phone</dt>
-                              <dd class="col-sm-2">(238) 386-0247</dd>
-                              <dt class="col-sm-1 text-truncate">Region</dt>
-                              <dd class="col-sm-2">Canada</dd>
-                            </dl>
+                        <tr>
+                          <td>2238</td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>مریم اسدی</strong></p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">8541736291</p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">۱۳۶۵/۰۲/۰۷</a></p>
+                          </td>
+                          <td class="w-25"><small class="text-muted">۲۷۷۸۵۱۰۸۸۱</small></td>
+                          <td class="text-muted">۰۹۱۲۳۴۵۶۷۸۹</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">ویرایش</a>
+                              <a class="dropdown-item" href="#">حذف</a>
+                              <a class="dropdown-item" href="#">جزئیات پرونده</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2152</td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-6.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>سید محمد حسینی</strong></p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">3159874628</p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">۱۳۶۳/۱۰/۱۳</a></p>
+                          </td>
+                          <td class="w-25"><small class="text-muted">۲۲۵۳۷۸۱۱۲۰</small></td>
+                          <td class="text-muted">۰۹۱۲۳۴۵۶۷۸۹</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">ویرایش</a>
+                              <a class="dropdown-item" href="#">حذف</a>
+                              <a class="dropdown-item" href="#">جزئیات پرونده</a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2488</td>
+                          <td>
+                            <div class="avatar avatar-md">
+                              <img src="./assets/avatars/face-7.jpg" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><strong>مجید خانی</strong></p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted">7421569385</p>
+                          </td>
+                          <td>
+                            <p class="mb-0 text-muted"><a href="#" class="text-muted">۱۳۷۴/۰۳/۲۳</a></p>
+                          </td>
+                          <td class="w-25"><small class="text-muted">۳۷۸۹۸۷۳۳۳۲</small></td>
+                          <td class="text-muted">۰۹۱۲۳۴۵۶۷۸۹</td>
+                          <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="text-muted sr-only">Action</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">ویرایش</a>
+                              <a class="dropdown-item" href="#">حذف</a>
+                              <a class="dropdown-item" href="#">جزئیات پرونده</a>
+                            </div>
                           </td>
                         </tr>
                       </tbody>
                     </table>
+                    <nav aria-label="Table Paging" class="mb-0 text-muted">
+                      <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
