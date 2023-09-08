@@ -2,3 +2,8 @@
 
 *.html
 
+!index.html
+!diagnosis.html
+!patients.html
+!types_treatment.html
+!filing.html
